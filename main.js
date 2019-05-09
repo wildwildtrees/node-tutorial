@@ -26,5 +26,15 @@ app.ws('/echo', function(ws, req) {
     });
   });
 
- 
+  app.ws('/chat', function(ws, req) {
+    ws.chatter = true ; 
+    ws.on('message', function(msg) {
+      expressWs.getWss().clients.forEach(client => { 
+        if (client.chatter) { client.send(msg)} ;
+      });
+    });
+  });
+
+  
+
 app.listen(3000);
