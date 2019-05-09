@@ -10,7 +10,8 @@ app.use(function (req, res, next) {
  
 app.get('/', function(req, res, next){
   console.log('get route', req.testing);
-  res.end();
+  //res.end();
+  res.sendfile(__dirname + '/ws.html');
 });
  
 app.ws('/', function(ws, req) {
