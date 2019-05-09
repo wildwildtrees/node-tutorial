@@ -1,0 +1,29 @@
+{
+  "name": "node-tutorial",
+  "version": "1.0.0",
+  "description": "a node.hs/express.js/express-ws server with default route, an echo route, and a chat route for now",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wildwildtrees/node-tutorial.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "express-ws",
+    "websockets"
+  ],
+  "author": "wildtrees",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wildwildtrees/node-tutorial/issues"
+  },
+  "homepage": "https://github.com/wildwildtrees/node-tutorial#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-ws": "^4.0.0"
+  }
+}
